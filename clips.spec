@@ -23,7 +23,7 @@ Patch0:		clips-setup.patch.bz2
 Patch1:		clips-6.21-lib64.patch.bz2
 #Patch2:	clips-Xaw3d.patch.bz2
 Patch3:         clips-6.21-gcc4.patch.bz2
-BuildRequires:	termcap-devel XFree86 XFree86-devel
+BuildRequires:	termcap-devel XFree86 X11-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %package	X11
