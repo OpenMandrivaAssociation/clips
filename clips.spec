@@ -1,6 +1,6 @@
 %define	name	clips 
 %define	version	6.21
-%define	release	%mkrel 7
+%define	release	%mkrel 8
 
 Summary:	Clips language for expert systems
 Name:		%{name}
