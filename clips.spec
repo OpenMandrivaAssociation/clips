@@ -19,12 +19,13 @@ Source6:	http://www.ghg.net/clips/download/documentation/arch5-1.pdf
 Source7:	http://www.ghg.net/clips/download/documentation/bpg.pdf
 Source8:	http://www.ghg.net/clips/download/documentation/ig.pdf
 Source9:	http://www.ghg.net/clips/download/documentation/usrguide.pdf
-Patch0:		clips-setup.patch.bz2
-Patch1:		clips-6.21-lib64.patch.bz2
-#Patch2:	clips-Xaw3d.patch.bz2
-Patch3:         clips-6.21-gcc4.patch.bz2
-BuildRequires:	termcap-devel X11-devel
-BuildRequires:	x11-data-bitmaps
+Patch0:		clips-setup.patch
+Patch1:		clips-6.21-lib64.patch
+Patch3:         clips-6.21-gcc4.patch
+Patch4:		clips-6.21-link.patch
+BuildRequires:	libx11-devel
+BuildRequires:	libxaw-devel
+BuildRequires:	libxt-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %package	X11
@@ -44,11 +45,12 @@ mv x-prjct/makefile/makefile.x clipssrc
 mv x-prjct/xinterface/* clipssrc
 %patch0 -p0 -b .setup
 %patch1 -p1 -b .lib64
-#%patch2 -p0 -b .Xaw3d
 %patch3 -p1 -b .gcc4
 bzcat %SOURCE2 > clipssrc/makefile
+%patch4 -p0 -b .link
 #(peroyvind) invalid flag for C, drop it to avoid lots of warning
 perl -pi -e "s#-Woverloaded-virtual ##g" clipssrc/makefile
+perl -pi -e "s#gcc #gcc %optflags %ldflags #g" clipssrc/makefile*
 
 %build
 pushd clipssrc 
