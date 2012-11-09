@@ -1,0 +1,11 @@
+--- clipssrc/makefile.link	2011-02-02 07:58:10.000000000 +0100
++++ clipssrc/makefile	2011-02-02 07:58:19.000000000 +0100
+@@ -35,7 +35,7 @@
+ 	    -Wstrict-prototypes -Waggregate-return -Wno-implicit $<
+ 
+ clips : $(OBJS)
+-	gcc -o clips $(OBJS) -lm -ltermcap   
++	gcc -o clips $(OBJS) -lm
+ 
+ agenda.o : agenda.c setup.h envrnmnt.h usrsetup.h argacces.h expressn.h exprnops.h \
+   exprnpsr.h extnfunc.h symbol.h userdata.h scanner.h pprint.h evaluatn.h \

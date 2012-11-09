@@ -1,0 +1,11 @@
+--- clips-6.21/clipssrc/xclipstext.c~	2003-06-17 01:01:23.000000000 +0200
++++ clips-6.21/clipssrc/xclipstext.c	2005-07-30 16:38:06.000000000 +0200
+@@ -580,7 +580,7 @@ static void InsertClipsNewLine(
+  *
+  ************************************************************/
+ 
+-static XComposeStatus compose_status = {NULL, 0};
++XComposeStatus compose_status = {NULL, 0};
+ 
+ /*	Function Name: AutoFill
+  *	Description: Breaks the line at the previous word boundry when
