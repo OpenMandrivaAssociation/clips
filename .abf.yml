@@ -1,11 +1,4 @@
 sources:
-  "abstract.pdf:"	f1b39462fbad6d135185e0ebeac7970cdeb3fa91
-  "apg.pdf:"	ed5c48ddc35d79f54703304529426fe2a7bb135f
-  "arch5-1.pdf:"	ed57cc5ee7b30ae31fe1f2863018dc17ddeec134
-  "bpg.pdf:"	97d42a498147ad442d63bed68532216fd79d1ffc
-  "clips.hlp:"	bfbba37ff011b42629001cd5f6f9efabd7fdf3f3
-  "clipssrc.tar.bz2:"	9ba2da067ddd993a6a376d399a63e29eb5df7d15
-  "ig.pdf:"	0215783d5d49659eb669fb6a228cb65f6cf966f3
-  "makefile.bz2:"	8e02ee598c6a405553dfe1f0efbd9e065d925ea9
-  "usrguide.pdf:"	3f30a773b101d753372bfedb167214d792e3d554
-  "x-prjct.tar.bz2:"	405fc939ff1fdb011452999934fbf82bfe5e4542
+  "clipssrc.tar.bz2": 9ba2da067ddd993a6a376d399a63e29eb5df7d15
+  "makefile.bz2": 8e02ee598c6a405553dfe1f0efbd9e065d925ea9
+  "x-prjct.tar.bz2": 405fc939ff1fdb011452999934fbf82bfe5e4542
