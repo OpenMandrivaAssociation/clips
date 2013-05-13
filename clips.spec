@@ -1,6 +1,6 @@
 %define	name	clips 
 %define	version	6.21
-%define	release	%mkrel 10
+%define release 	11
 
 Summary:	Clips language for expert systems
 Name:		%{name}
@@ -26,7 +26,6 @@ Patch4:		clips-6.21-link.patch
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xaw7)
 BuildRequires:	pkgconfig(xt)
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %package	X11
 Summary:	X interface to Clips
