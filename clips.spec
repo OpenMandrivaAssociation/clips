@@ -2,7 +2,7 @@
 %define	version	6.21
 %define release 	11
 
-Summary:	Clips language for expert systems
+Summary:	Language for expert systems
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
