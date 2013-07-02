@@ -1,11 +1,9 @@
-%define	name	clips 
-%define	version	6.21
-%define release  	12
+%define debug_package %{nil}
 
 Summary:	Language for expert systems
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		clips
+Version:	6.21
+Release:	13
 License:	BSD style
 Group:		Development/Other
 Url:		http://www.ghg.net/clips/download/source/
@@ -113,15 +111,15 @@ done
 - import clips
 
 
-* Sat Jul 30 2005 Nicolas L�cureuil <neoclust@mandriva.org>  6.21-5mdk
+* Sat Jul 30 2005 Nicolas Lécureuil <neoclust@mandriva.org>  6.21-5mdk
 - Remove Packager tag
 - Patch 3 : Fix build with Gcc4
 
-* Sun Jan 23 2005 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 6.21-4mdk
+* Sun Jan 23 2005 Per Ã˜yvind Karlsen <peroyvind@linux-mandrake.com> 6.21-4mdk
 - rebuild
 - get rid of compile warnings
 
-* Thu Nov 06 2003 Per �yvind Karlsen <peroyvind@linux-mandrake.com> 6.21-3mdk
+* Thu Nov 06 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 6.21-3mdk
 - don't rm -rf $RPM_BUILD_ROOT in %%prep
 - drop P2, do _NOT_ link against Xaw3d, makes xclips segfault, link against Xaw in stead
 - cosmetics
@@ -129,7 +127,7 @@ done
 * Fri Sep 26 2003 Gwenole Beauchesne <gbeauchesne@mandrakesoft.com> 6.21-2mdk
 - lib64 fixes
 
-* Fri Jul 11 2003 Per Øyvind Karlsen <peroyvind@sintrax.net> 6.21-1mdk
+* Fri Jul 11 2003 Per Ã˜yvind Karlsen <peroyvind@sintrax.net> 6.21-1mdk
 - 6.21
 - bzip2 sources
 - regenerated P0 & P2
