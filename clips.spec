@@ -1,6 +1,6 @@
 %define	name	clips 
 %define	version	6.21
-%define release 	11
+%define release  	12
 
 Summary:	Language for expert systems
 Name:		%{name}
@@ -58,19 +58,17 @@ pushd clipssrc
 popd
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p -m 0755 $RPM_BUILD_ROOT%{_prefix}/{X11R6/bin,bin,doc,share/clips}
-install -m 0755 -s clipssrc/clips $RPM_BUILD_ROOT%{_prefix}/bin/
-install -m 0755 -s clipssrc/xclips $RPM_BUILD_ROOT%{_prefix}/X11R6/bin/
-install -m 0644 %SOURCE3 $RPM_BUILD_ROOT%{_datadir}/clips/
+mkdir -p -m 0755 %{buildroot}%{_prefix}/{X11R6/bin,bin,doc,share/clips}
+install -m 0755 -s clipssrc/clips %{buildroot}%{_prefix}/bin/
+install -m 0755 -s clipssrc/xclips %{buildroot}%{_prefix}/X11R6/bin/
+install -m 0644 %SOURCE3 %{buildroot}%{_datadir}/clips/
 cp %SOURCE3 .
-mkdir -p $RPM_BUILD_ROOT%{_docdir}/clips-%PACKAGE_VERSION
+mkdir -p %{buildroot}%{_docdir}/clips-%PACKAGE_VERSION
 for i in %SOURCE4 %SOURCE5 %SOURCE6 %SOURCE7 %SOURCE8 %SOURCE9; do
-install -m 0644 $i $RPM_BUILD_ROOT%{_docdir}/clips-%PACKAGE_VERSION
+install -m 0644 $i %{buildroot}%{_docdir}/clips-%PACKAGE_VERSION
 done
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %attr(-,root,root) %{_bindir}/clips
