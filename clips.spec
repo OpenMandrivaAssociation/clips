@@ -1,7 +1,7 @@
 Summary:	Clips language for expert systems
 Name:		clips
 Version:	6.21
-Release:	14
+Release:	15
 License:	BSD
 Group:		Development/Other
 Url:		http://www.ghg.net/clips/download/source/
