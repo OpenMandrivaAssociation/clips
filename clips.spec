@@ -4,7 +4,7 @@ Version:	6.21
 Release:	15
 License:	BSD
 Group:		Development/Other
-Url:		http://www.ghg.net/clips/download/source/
+Url:		https://www.ghg.net/clips/download/source/
 Source0:	http://www.ghg.net/clips/download/source/clipssrc.tar.bz2
 Source1:	http://www.ghg.net/clips/download/source/x-prjct.tar.bz2
 Source2:	http://www.ghg.net/clips/download/source/makefile.bz2
