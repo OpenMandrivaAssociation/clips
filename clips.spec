@@ -19,6 +19,7 @@ Patch0:		clips-setup.patch
 Patch1:		clips-6.21-lib64.patch
 Patch3:		clips-6.21-gcc4.patch
 Patch4:		clips-6.21-link.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xaw7)
 BuildRequires:	pkgconfig(xt)
